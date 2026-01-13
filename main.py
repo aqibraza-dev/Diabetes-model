@@ -11,7 +11,7 @@ app = FastAPI(title="Diabetes Risk API", version="1.0")
 # 2. CORS Setup (Crucial for React Integration)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://localhost:3000"], # Add your frontend URL
+    allow_origins=["https://med-ai-pro.vercel.app", "http://localhost:3000"], # Add your frontend URL
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
